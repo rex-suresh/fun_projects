@@ -1,0 +1,13 @@
+[
+  {
+    "id" : 197,
+    "name" : "umbreon",
+    "types" : ["dark"],
+    "speed" : 65,
+    "hp" : 95,
+    "base_xp" : 184,
+    "attack" : 65,
+    "defense" : 110,
+    "weight" : 270
+  }
+]

@@ -1,0 +1,30 @@
+[
+  [
+    "head", {
+      "content" : [
+        ["title", {"content": "generated page"}], 
+        ["link", {"attributes": 
+          {"rel": "stylesheet", "href": "styles.css"}}]]
+    }
+  ],
+  [
+    "body", {
+      "content" : [
+        ["div", {"attributes": {"class": "page-wrapper"},
+          "content": [
+            ["div", {"attributes": {"class": "sidebar"}, 
+              "content": ["nav", {"attributes": "sidebar-nav", "content":[
+                "ul", {"content" : [
+                ["li", {"content" : ["a", 
+                  {"attributes": {"href": "", "class": ""}}
+                ]}],
+                ["li", {"content" : ["a", 
+                  {"attributes": {"href": "", "class": ""}}
+                ]}]
+              ]}]  
+              }] }]
+          ]
+          }]]
+    }
+  ]
+]

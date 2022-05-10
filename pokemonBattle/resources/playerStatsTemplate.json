@@ -1,0 +1,20 @@
+{
+  "player1" : {
+    "pokemonName" : "__pokemonName__",
+    "attack" : "__attack__",
+    "def" : "__defense__",
+    "hp" : "__hp__",
+    "shields" : "__shields__",
+    "shieldStatus" : false,
+    "hitStatus" : false
+  },
+  "player2" : {
+    "pokemonName" : "__pokemonName__",
+    "attack" : "__attack__",
+    "def" : "__defense__",
+    "hp" : "__hp__",
+    "shields" : "__shields__",
+    "shieldStatus" : false,
+    "hitStatus" : false
+  }
+}
