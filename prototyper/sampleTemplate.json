@@ -1,0 +1,11 @@
+{
+  "__STUDENT_NAME__" : {
+    "name" : "__STUDENT_NAME__",
+    "age" : "__STUDENT_AGE__",
+    "marks" : {
+      "english" : "__ENGLISH_MARKS__",
+      "maths" : "__MATH_MARKS__",
+      "science" : "__SCIENCE_MARKS__"
+    }
+  }
+}
