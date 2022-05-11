@@ -49,9 +49,8 @@ player2=`selectPokemon "${pokemons}"`
 gameFile="gameResources/playerStats.json"
 createPlayerStats "${player1}" "${player2}" "${gameFile}"
 
-gameOver=$(node gameResources/isGameOver.js "${gameFile}")
-
-while [[ "${gameOver}" -ne "1" ]]
+node gameResources/isGameOver.js "${gameFile}"
+while [[ $? -ne 1 ]]
 do
   echo -e "\nselect a move - player 1 :\n"
   moveOne=$(selectMove)
@@ -60,11 +59,12 @@ do
   moveTwo=$(selectMove)
   
   node gameResources/insertMoves.js "${moveOne}" "${moveTwo}" "${gameFile}"
+  
   node pokemonBattle.js
   node -e "const pokemons = require('./gameResources/playerStats.json');
   console.table(pokemons)"
 
-  gameOver=`node gameResources/isGameOver.js "${gameFile}"`
+  node gameResources/isGameOver.js "${gameFile}"
 done;
 
 
