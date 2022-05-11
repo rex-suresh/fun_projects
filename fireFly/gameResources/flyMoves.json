@@ -1,0 +1,7 @@
+{
+  "tileCount": 100,
+  "positions": {
+    "flyPos": 1,
+    "foodPos": 100
+  }
+}
