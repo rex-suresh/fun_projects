@@ -1,15 +1,15 @@
-const fs = require('fs');
-const playerStatFile = process.argv[2];
-
-const players = JSON.parse(fs.readFileSync(playerStatFile, 'utf8'));
+// const fs = require('fs');
+// const playerStatFile = process.argv[2];
+// const players = JSON.parse(fs.readFileSync(playerStatFile, 'utf8'));
 const gameOver = (player) => player.hp < 0;
 
-for (const player in players) {
-  if (gameOver(players[player])) {
-    console.log(players[player].name, 'is Winner !!');
-    // eslint-disable-next-line no-process-exit
-    process.exit(1);
+const isGameOver = function (players) {
+  if (gameOver(players.player1) || gameOver(players.player2)) {
+    process.exitCode = 1;
+    const winner = players.player1.hp > 0 ? players.player1.pokemonName :
+      players.player2.pokemonName;
+    console.log(winner, 'won the battle !!!', '\n');
   }
-}
+};
 
-// console.log(+ gameOver(players.player1) || + gameOver(players.player2));
+exports.isGameOver = isGameOver;

@@ -16,7 +16,7 @@ function selectPokemon() {
 }
 
 function selectMove() {
-  local moves=( 'shieldStatus' 'hitStatus' 'idle' )
+  local moves=( 'shield' 'attack' 'defend' )
   select move in ${moves[@]}; 
   do 
     echo ${move}
@@ -58,13 +58,7 @@ do
   echo -e "\nselect a move - player 2 :\n"
   moveTwo=$(selectMove)
   
-  node gameResources/insertMoves.js "${moveOne}" "${moveTwo}" "${gameFile}"
-  
-  node pokemonBattle.js
-  node -e "const pokemons = require('./gameResources/playerStats.json');
-  console.table(pokemons)"
-
-  node gameResources/isGameOver.js "${gameFile}"
+  node gameResources/playOneRound.js "${gameFile}" "${moveOne}" "${moveTwo}"
 done;
 
 

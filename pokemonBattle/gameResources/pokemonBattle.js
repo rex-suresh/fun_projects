@@ -58,14 +58,15 @@ const battle = function (players) {
   return players;
 };
 
-const playGame = function (statsFile) {
-  const players = JSON.parse(
-    fs.readFileSync(statsFile, 'utf8'));
-  
+const playGame = function (statsFile, players) {
+  // const players = JSON.parse(
+  //   fs.readFileSync(statsFile, 'utf8'));
   const battleResults = battle(players);
   
   fs.writeFileSync(statsFile,
     JSON.stringify(battleResults), 'utf8');
+  
+  return players;
 };
 
 // playGame();

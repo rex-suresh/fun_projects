@@ -1,1 +1,1 @@
-{"player1":{"pokemonName":"bulbasaur","attack":49,"hp":-17,"def":-13,"shields":3,"shieldStatus":false,"hitStatus":true},"player2":{"pokemonName":"ivysaur","attack":62,"hp":60,"def":14,"shields":3,"shieldStatus":false,"hitStatus":false}}
+{"player1":{"pokemonName":"ivysaur","attack":62,"hp":60,"def":3,"shields":3,"shieldStatus":false,"hitStatus":false},"player2":{"pokemonName":"caterpie","attack":30,"hp":-17,"def":-27,"shields":3,"shieldStatus":false,"hitStatus":false}}
