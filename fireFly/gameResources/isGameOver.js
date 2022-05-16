@@ -1,5 +1,6 @@
 const game = require('./flyMoves.json');
 
-if (game.positions.flyPos === 100) {
-  process.exit = 1;
+process.exitCode = 0;
+if (game.positions.flyPos === game.positions.foodPos) {
+  process.exitCode = 1;
 }
