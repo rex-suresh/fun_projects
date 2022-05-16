@@ -56,12 +56,12 @@
           }
       ],
       "max-statements": "error",
-      "no-console": "error",
+    //   "no-console": "error",
       "no-else-return": "error",
       "no-eval": "error",
       "no-implicit-globals": "error",
       "prefer-const": "error",
-      "no-magic-numbers": "error",
+    //   "no-magic-numbers": "error",
       "no-process-exit": "error",
       "no-process-env": "error",
       "no-return-assign": "error",
@@ -70,7 +70,7 @@
       "no-mixed-operators": "error",
       "complexity": [
           "error",
-          4
+          5
       ],
       "no-extra-parens": "error",
       "no-template-curly-in-string": "error",
