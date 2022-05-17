@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const nextPosition = function (currentPos, limit, frames, time) {
   const displacement = limit / (frames * time);
-  return currentPos + displacement;
+  return currentPos + Math.ceil(displacement);
 };
 
 const readSlideDetails = function () {
@@ -45,6 +45,6 @@ const createStyleSheet = function (limit, frames, time) {
   writeSlideDetails({newStyle, positions});
 };
 
-// const styleProperties = process.argv.slice(2).map(num => +num);
-// createStyleSheet(...styleProperties);
-exports.createStyleSheet = createStyleSheet;
+const styleProperties = process.argv.slice(2).map(num => +num);
+createStyleSheet(...styleProperties);
+// exports.createStyleSheet = createStyleSheet;

@@ -10,9 +10,9 @@ function main () {
   while [[ currentPos -le slideLimit ]];
   do
     node createStyle.js "${slideLimit}" "${frames}" "${time}"
-    currentPos=$((${currentPos} + 1))
+    currentPos=$(grep "right" "./boxPosition.json" | cut -f 2 -d':');
     sleep 0.1
   done
 }
 
-main "300" "50" "1"
+main "300" "30" "3"
