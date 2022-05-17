@@ -15,4 +15,4 @@ function main () {
   done
 }
 
-main "100" "30" "3"
+main "300" "50" "1"
