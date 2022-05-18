@@ -27,7 +27,7 @@ function main () {
 
     node ${gameResourcesPath}/isGameOver.js
   done
+echo "GAME OVER !!!"
 }
 
 main "./gameResources"
-echo "GAME OVER !!!"

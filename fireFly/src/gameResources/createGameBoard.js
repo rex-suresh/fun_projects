@@ -9,4 +9,8 @@ const game = {
   }
 };
 
-createGame(fs.readFileSync('./templates/index_template.html', 'utf8'), game);
+try {
+  createGame(fs.readFileSync('./templates/index_template.html', 'utf8'), game);
+} catch (error) {
+  throw {name: error.name, message: 'cannot create page'};
+}

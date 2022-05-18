@@ -22,14 +22,14 @@ h2 {
   flex-wrap: wrap;
   margin: 0px auto;
 
-  width: 1000px;
+  width: 900px;
   aspect-ratio: 1;
   box-sizing: content-box;
   border: 1px white solid;
 }
 
 .board>div {
-  height: 100px;
+  height: 90px;
   box-sizing: border-box;
   border: 1px solid lightgray;
   aspect-ratio: 1;

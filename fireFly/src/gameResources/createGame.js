@@ -36,7 +36,7 @@ const divOf = function (pos) {
   return ['div', {}, ['div', attributes, '']];
 };
 
-const generateDivBlock = function ({tileCount, positions}) {
+const generateBoard = function ({tileCount, positions}) {
   const gameTiles = divOf.bind(positions);
   const dom = Array(tileCount).fill(1).map((num, index) =>
     gameTiles(num + index));
@@ -54,7 +54,7 @@ const writeToFiles = function (page, game) {
 };
 
 const generatePage = function (template, game) {
-  const page = template.replace(/__board__/, generateDivBlock(game));
+  const page = template.replace(/__board__/, generateBoard(game));
   writeToFiles(page, game);
 };
 
