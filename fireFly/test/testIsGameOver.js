@@ -3,7 +3,7 @@ const assert = require('assert');
 
 const tests = function () {
   const file = './test/flyMoves.json';
-  const testFile = './gameResources/isGameOver.js';
+  const testFile = './src/gameResources/isGameOver.js';
   
   describe('isGameOver', () => {
     it('test for exit code 1', () => {
