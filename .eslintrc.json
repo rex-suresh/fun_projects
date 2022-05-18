@@ -58,7 +58,7 @@
       "max-statements": "error",
     //   "no-console": "error",
       "no-else-return": "error",
-      "no-eval": "error",
+    //   "no-eval": "warn",
       "no-implicit-globals": "error",
       "prefer-const": "error",
     //   "no-magic-numbers": "error",
