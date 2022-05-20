@@ -12,7 +12,6 @@ const tagOf = function (tag, attributes, ...content) {
   const newContent = content.map(
     subTag => Array.isArray(subTag) ? tagOf(...subTag) : subTag).join('');
   
-  ///array
   if (['img', 'link'].includes(tag)) {
     return '<' + tag + ' ' + attributesOf(attributes) + '/>';
   }
@@ -21,17 +20,4 @@ const tagOf = function (tag, attributes, ...content) {
     '</' + tag + '>';
 };
 
-// const dom = ['html', {},
-//   ['head', {},
-//     ['title', {}, 'Sample Dom'],
-//     ['link', { href: './style.css', rel: 'stylesheet' }]
-//   ],
-//   ['body', {},
-//     ['div', { class: 'page-wrapper' },
-//       ['div', { class: 'box' }, '']
-//     ]
-//   ]
-// ];
-
-// console.log(tagOf(...dom));
 exports.tagOf = tagOf;
