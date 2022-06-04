@@ -1,8 +1,8 @@
 class Player {
   #maxPoints; #position; #points;
-  constructor(maxPoints) {
+  constructor(maxPoints, position) {
     this.#maxPoints = maxPoints;
-    this.#position = 0;
+    this.#position = position;
     this.#points = 0;
   }
 
@@ -18,6 +18,10 @@ class Player {
 
   addPoint() {
     this.#points++;
+  }
+
+  currentPosition() {
+    return this.#position;
   }
 
   isPlayerAt(otherPosition) {
