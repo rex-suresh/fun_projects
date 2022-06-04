@@ -30,4 +30,4 @@ function main () {
 echo "GAME OVER !!!"
 }
 
-main "./gameResources"
+main "./src/gameResources"
