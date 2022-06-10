@@ -1,7 +1,7 @@
 {
   "tileCount": 100,
   "positions": {
-    "flyPos": 90,
-    "foodPos": 80
+    "flyPos": 30,
+    "foodPos": 30
   }
 }

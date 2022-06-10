@@ -46,7 +46,7 @@ const generateBoard = function ({tileCount, positions}) {
 const writeToFiles = function (page, game) {
   try {
     fs.writeFileSync('index.html', page, 'utf8');
-    fs.writeFileSync('./gameResources/flyMoves.json',
+    fs.writeFileSync('./src/flyMoves.json',
       JSON.stringify(game, null, 2), 'utf8'); 
   } catch (error) {
     throw { name: error.name, message: 'unable to create page'};
